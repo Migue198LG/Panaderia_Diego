@@ -1,0 +1,120 @@
+/* login.css */
+
+/* Estilo general */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* Fuente elegante */
+  }
+  
+  /* Fondo de la página */
+  .background {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url(imgs/img2.jpeg);
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Contenedor del formulario */
+  .form-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparente */
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Título */
+  h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Campos del formulario */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  input {
+    width: calc(100% - 20px); /* Justificación */
+    padding: 10px;
+    border: 2px solid white; /* Borde blanco */
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 14px;
+    color: white;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Botones */
+  button {
+    background-color: rgba(255, 255, 255, 0.2); /* Blanco transparente */
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Oscuro al pasar el cursor */
+    color: white;
+  }
+  
+  /* Enlace para registrarse */
+  .register-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .register-link a {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  
+  .register-link a:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* Estilo para los copos de nieve */
+.copo-nieve {
+  position: fixed;
+  top: -10px;
+  color: white;
+  z-index: 9999;
+  animation: caer 5s linear infinite;
+  pointer-events: none; /* Evita que los copos interfieran con los clics */
+}
+
+@keyframes caer {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(100vh);
+  }
+}
+  

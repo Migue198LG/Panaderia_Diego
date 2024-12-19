@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestionar Productos</title>
+  <link rel="stylesheet" href="productos.css">
+
+</head>
+<body>
+  <!-- Menú de navegación -->
+  <header class="menu">
+    <a href="admin_index.html" class="logo">
+      <img src="../imgs/logo.png" alt="Logo Panadería" width="70px" height="40px">
+    </a>
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav class="navbar">
+      <ul>
+        <li><a href="admin_index.html">Inicio</a></li>
+        <li><a href="productos.html" class="active">Gestionar Productos</a></li>
+        <li><a href="historial.html">Historial de Compras</a></li>
+        <li><a href="index.html">Salir</a></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Imagen de fondo con texto -->
+  <section class="hero">
+    <h1>Gestionar Productos</h1>
+    <p>Administre los productos de la panadería con facilidad: agregar, actualizar y eliminar productos.</p>
+  </section>
+
+  <!-- Contenedores para formularios -->
+  <main>
+    <section class="form-section">
+      <div class="form-container">
+        <h2>Agregar Productos</h2>
+        <!-- Formulario Agregar Productos -->
+<form id="formAgregarProducto">
+  <label for="productNameAgregar">Nombre del Producto:</label>
+  <input type="text" id="productNameAgregar" name="productName">
+  <label for="productPriceAgregar">Precio:</label>
+  <input type="number" id="productPriceAgregar" name="productPrice" step="0.01">
+  <label for="productStockAgregar">Cantidad en Stock:</label>
+  <input type="number" id="productStockAgregar" name="productStock">
+  <label for="productImageAgregar">URL de Imagen del Producto:</label>
+  <input type="url" id="productImageAgregar" name="productImage">
+  <button type="submit">Agregar Producto</button>
+</form>
+
+<!-- Formulario Actualizar Producto -->
+ <h2>Actuaizar Prodcuto</h2>
+<form id="formActualizarProducto">
+  <label for="productIdActualizar">ID del Producto:</label>
+  <input type="number" id="productIdActualizar" name="productId">
+  <label for="productNameActualizar">Nombre nuevo:</label>
+  <input type="text" id="productNameActualizar" name="productName">
+  <label for="productPriceActualizar">Precio nuevo:</label>
+  <input type="number" id="productPriceActualizar" name="productPrice" step="0.01">
+  <label for="productStockActualizar">Cantidad nueva en Stock:</label>
+  <input type="number" id="productStockActualizar" name="productStock">
+  <label for="productImageActualizar">Nueva URL de Imagen del Producto:</label>
+  <input type="url" id="productImageActualizar" name="productImage">
+  <button type="submit">Actualizar Producto</button>
+</form>
+ <br><br><br>
+        <h2>Eliminar Producto</h2>
+        <!-- Formulario Eliminar Producto -->
+<form id="formEliminarProducto">
+  <label for="productIdEliminar">ID del Producto a Eliminar:</label>
+  <input type="number" id="productIdEliminar" name="productId">
+  <button type="submit">Eliminar Producto</button>
+</form>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Panadería. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="productos.js"></script>
+</body>
+</html>

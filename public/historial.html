@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Historial de Compras</title>
+    <link rel="stylesheet" href="historial.css"> <!-- Archivo CSS con el estilo oscuro -->
+</head>
+<body>
+    <header class="menu">
+        <a href="admin_index.html" class="logo">
+          <img src="../imgs/logo.png" alt="Logo Panadería" width="70px" height="40px">
+        </a>
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="admin_index.html">Inicio</a></li>
+                <li><a href="productos.html" class="active">Gestionar Productos</a></li>
+                <li><a href="historial.html">Historial de Compras</a></li>
+                <li><a href="index.html">Salir</a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+          </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Consulta el Historial de Compras por Usuario</h1>
+        <p>Administre los productos de la panadería con facilidad: agregar, actualizar y eliminar productos.</p>
+    </section>
+
+    <main>
+            <section class="content">
+                <label for="usuario-id">ID del Usuario:</label>
+                <input type="number" id="usuario-id" placeholder="Introduce el ID del usuario">
+                <button id="consultar-historial">Consultar Historial</button>
+            </section>
+            <div id="mensaje" class="mensaje"></div>
+            
+            <table id="tabla-historial" border="1">
+                <thead>
+                    <tr>
+                        <th>ID del Ticket</th>
+                        <th>Fecha de Compra</th>
+                        <th>Total a Pagar</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-body"></tbody> <!-- Aquí se rellenarán las filas -->
+            </table>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Panadería. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="historial.js"></script> <!-- Archivo JavaScript actualizado -->
+</body>
+</html>

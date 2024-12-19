@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Compras</title>
+    <link rel="stylesheet" href="historial_usuario.css"> 
+</head>
+<body>
+    <header class="menu">
+            <a href="index.html" class="logo">
+              <img src="../imgs/logo.png" alt="Logo Panadería" width="70px" height="40px">
+            </a>
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="carrito.html">Carrito de Compras</a></li>
+            <li><a href="fondos.html">Agregar Fondos</a></li>
+            <li><a href="historial_usuario.html">Historial de Compras</a></li>
+            <li><a href="login.html">Iniciar sesion</a></li>
+            <li><a href="logout.html">Cerrar Sesion</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Historial de Compras</h1>
+        <p>Administre los productos de la panadería con facilidad: agregar, actualizar y eliminar productos.</p>
+    </section>
+
+    <main>
+        <div id="mensaje" class="mensaje"></div>
+        <table id="tabla-historial" border="1">
+            <thead>
+                <tr>
+                    <th>ID del Ticket</th>
+                    <th>Fecha de Compra</th>
+                    <th>Total a Pagar</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-body"></tbody> <!-- Corregido: agregado id -->
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Panadería. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="historial_usuario.js"></script>
+</body>
+</html>
